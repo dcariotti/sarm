@@ -1,6 +1,7 @@
 pub mod parser;
-pub mod processor;
 
 fn main() {
-    println!("Hello, world!");
+    let _ = parser::parse_line("loop      ".to_string());
+    let _ = parser::parse_line("     mov     r0, r1".to_string());
+    let _ = parser::parse_line("     beq     suca".to_string());
 }
